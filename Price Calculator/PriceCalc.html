@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title> Price Calculator for Application Hosting on Virtual Machines </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+<h1> Price Calculator for Application Hosting on Virtual Machines </h1>
+<form>
+    <label for="frontend">Choose a virtual machine to host your web application front end (PRODUCTION Environment):</label>
+    <select id="frontend" name="frontend">
+      <option value=945.00>Linux Web Application Tier 1 Small - Production</option>
+      <option value=1075.00>Linux Web Application Tier 1 Medium - Production</option>
+      <option value=1628.00>Linux Web Application Tier 1 Large - Production</option>
+      <option value=720.00>Linux Web Application Tier 2 Small - Production</option>
+      <option value=755.00>Linux Web Application Tier 2 Medium - Production</option>
+      <option value=1055.00>Linux Web Application Tier 2 Large - Production</option>
+      <option value=745.00>Linux Web Application Tier 3 Small - Production</option>
+      <option value=780.00>Linux Web Application Tier 3 Medium - Production</option>
+      <option value=1080.00>Linux Web Application Tier 3 Large - Production</option>
+      <option value="wt1s">Windows Web Application Tier 1 Small - Production</option>
+      <option value="wt1m">Windows Web Application Tier 1 Medium - Production</option>
+      <option value="wt1l">Windows Web Application Tier 1 Large - Production</option>
+      <option value="wt2s">Windows Web Application Tier 2 Small - Production</option>
+      <option value="wt2m">Windows Web Application Tier 2 Medium - Production</option>
+      <option value="wt2l">Windows Web Application Tier 2 Large - Production</option>
+      <option value="wt3s">Windows Web Application Tier 3 Small - Production</option>
+      <option value="wt3m">Windows Web Application Tier 3 Medium - Production</option>
+      <option value="wt3l">Windows Web Application Tier 3 Large - Production</option>
+    </select>
+    </br>
+    </br>
+    <label for="dev&testfrontend">Choose a virtual machine to host your web application front end(DEV OR DLVR and TEST Environments):</label>
+    <select id="dev&testfrontend" name="dev&testfrontend">
+        <option value=820.00>Linux Development or Test Tier 1 Small - Production</option>
+        <option value=955.00>Linux Development or Test Tier 1 Medium - Production</option>
+        <option value=1510.00>Linux Development or Test Tier 1 Large - Production</option>
+        <option value=600.00>Linux Development or Test Tier 2 Small - Production</option>
+        <option value=635.00>Linux Development or Test Tier 2 Medium - Production</option>
+        <option value=935.00>Linux Development or Test 2 Large - Production</option>
+        <option value=585.00>Linux Development or Test 3 Small - Production</option>
+        <option value=625.00>Linux Development or Test 3 Medium - Production</option>
+        <option value=960.00>Linux Development or Test 3 Large - Production</option>
+        <option value="wdtt1s">Windows Development or Test Tier 1 Small - Production</option>
+        <option value="wdtt1m">Windows Development or Test Tier 1 Medium - Production</option>
+        <option value="wdtt1l">Windows Development or Test Tier 1 Large - Production</option>
+        <option value="wdtt2s">Windows Development or Test Tier 2 Small - Production</option>
+        <option value="wdtt2m">Windows Development or Test Tier 2 Medium - Production</option>
+        <option value="wdtt2l">Windows Development or Test Tier 2 Large - Production</option>
+        <option value="wdtt3s">Windows Development or Test Tier 3 Small - Production</option>
+        <option value="wdtt3m">Windows Development or Test Tier 3 Medium - Production</option>
+        <option value="wdtt3l">Windows Development or Test Tier 3 Large - Production</option>
+      </select>
+    </br>
+    </br>
+      <label for="database">Choose a virtual machine to host your database (PRODUCTION Environment):</label>
+      <select id="database" name="database">
+        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
+        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
+        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
+        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
+        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
+        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
+        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
+        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
+        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
+        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
+        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
+        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
+        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
+        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
+        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
+        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
+        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
+        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+      </select>
+    </br>
+    </br>
+    <label for="dev&testdatabase">Choose a virtual machine to host your database (DEV OR DLVR and TEST Environment):</label>
+      <select id="dev&testdatabase" name="dev&testdatabase">
+        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
+        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
+        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
+        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
+        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
+        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
+        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
+        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
+        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
+        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
+        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
+        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
+        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
+        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
+        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
+        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
+        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
+        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+      </select>
+    </br>
+    </br>
+      <label for="middleware">Choose a virtual machine to host your middleware application if any (PRODUCTION Environment): </label>
+      <select id="middleware" name="middleware">
+        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
+        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
+        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
+        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
+        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
+        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
+        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
+        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
+        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
+        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
+        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
+        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
+        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
+        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
+        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
+        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
+        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
+        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+        <option value=0.00>None</option>
+      </select>
+    </br>
+    </br>
+      <label for="dev&testmiddleware">Choose a virtual machine to host your middleware application if any (DEV OR DLVR and TEST Environments):</label>
+      <select id="dev&testmiddleware" name="dev&testmiddleware">
+        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
+        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
+        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
+        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
+        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
+        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
+        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
+        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
+        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
+        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
+        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
+        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
+        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
+        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
+        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
+        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
+        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
+        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+        <option value=0.00>None</option>
+      </select>
+    </br>
+    </br>
+    <label for="storage">Choose an application storage type (PROD Environments):</label>
+      <select id="storage" name="storage">
+        <option value=3.00>Tier 1 Storage</option>
+        <option value=3.25>Tier 1 Mirrored</option>
+        <option value=0.90>Tier 2 Storage</option>
+        <option value=1.25>Tier 2 Mirrored</option>
+        <option value=0.55>Tier 3 Storage</option>
+        <option value=0.00>None</option>
+      </select>
+    </br>
+  </br>
+  <label for="dev&teststorage">Choose an application storage type (DEV or DLVR and TEST Environments):</label>
+    <select id="dev&teststorage" name="dev&teststorage">
+        <option value=3.00>Tier 1 Storage</option>
+        <option value=3.25>Tier 1 Mirrored</option>
+        <option value=0.90>Tier 2 Storage</option>
+        <option value=1.25>Tier 2 Mirrored</option>
+        <option value=0.55>Tier 3 Storage</option>
+        <option value=0.00>None</option>
+    </select>
+    </br>
+    </br>
+      <h3><label for="additionalservices">Choose all the additional services that you require: </label></h3>
+     </br> 
+      <label for="service1"> Monthly Data backups (Calculated for 1 GB)? </label>
+      <select id="service1" name="service1">
+        <option value=0.36>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service2"> Extended Data Retention(Calculated for 1 GB)? </label>
+      <select id="service2" name="service2">
+        <option value=0.20>Yes</option>
+        <option value=0.00">No</option>
+      </select>
+    </br>
+      <label for="service3"> IIS Support? </label>
+      <select id="service3" name="service3">
+        <option value=102.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service4"> Apache Support? </label>
+      <select id="service4" name="service4">
+        <option value=73.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service5"> Tomcat Support? </label>
+      <select id="service5" name="service5">
+        <option value=56.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service6"> Application Monitoring? </label>
+      <select id="service6" name="service6">
+        <option value=140.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service7"> Database Management? </label>
+      <select id="service7" name="service7">
+        <option value=319.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service8"> Image Performance?</label> 
+      <select id="service8" name="service8">
+        <option value=81.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service9"> Server Capacity? </label>
+      <select id="service9" name="service9">
+        <option value=109.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br> 
+      <label for="service10"> Cluster Management? </label>
+      <select id="service10" name="service10">
+        <option value=177.00>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br>
+      <label for="service11"> Extended support - 5x12?</label>
+      <select id="service11" name="service11">
+        <option value=52>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+    </br> 
+      <label for="service12"> Extended support - 7x24? </label>
+      <select id="service12" name="service12">
+        <option value=106>Yes</option>
+        <option value=0.00>No</option>
+      </select>
+</br>
+</br> 
+<input type="button" onClick="calculateTotalPrice()" Value="Calculate Price" />
+</form>
+<p>The Result is : $<span id = "result"></span> per month</p>
+<p> Calculated for 1GB application storage</p>
+<p> <i> Note: These costs are the minimum costs incurred per month. Additional costs can include, costs per GB for storage and database, costs for the need of multiple VMs, License costs, Consulting costs, Custom Hosting charges, VM Upgrade charges, Hosting Additional Software charges, etc.  </i></p>
+
+<hr>
+<h1> Cost Incurred by Ministries after moving applications to Openshift? </h1>
+<p> Ministries incur <b> zero </b> costs for infrastructure but need to incur costs for an agile team to continuously manage and monitor the application on OpenShift </p>
+<hr> 
+
+<h1> Should I lift and shift my legacy application to OpenShift? </h1>
+<label for="windowsbased"> Is your application a Windows based Application</label>
+<select id="windowsbased" name="windowsbased">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+</select>
+</br>
+</br>
+<label for="mainframe"> Is your application a Mainframe Application</label>
+<select id="mainframe" name="mainframe">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+</select>
+</br>
+</br>
+<label for="oracle"> Are you planning to move an Oracle Database to Openshift as is?</label>
+<select id="oracle" name="oracle">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+</select>
+</br>
+</br>
+<label for="ha"> Does your application support high availability?</label>
+<select id="ha" name="ha">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+</select>
+</br>
+</br>
+<input type="button" onClick="makeDecision()" Value="Check Openshift Compatibility" />
+</form>
+<p>The Decision is : <span id = "decision"></span> </p>
+
+
+<script>
+  function calculateTotalPrice()
+{
+        price1 = parseFloat(document.getElementById("frontend").value);
+        price2 = parseFloat(document.getElementById("dev&testfrontend").value)*2;
+        price3 = parseFloat(document.getElementById("database").value);
+        price4 = parseFloat(document.getElementById("dev&testdatabase").value)*2;
+        price5 = parseFloat(document.getElementById("middleware").value);
+        price6 = parseFloat(document.getElementById("dev&testmiddleware").value)*2;
+        price7 = parseFloat(document.getElementById("storage").value);
+        price8 = parseFloat(document.getElementById("dev&teststorage").value)*2;
+        price9 = parseFloat(document.getElementById("service1").value);
+        price10 = parseFloat(document.getElementById("service2").value);
+        price11 = parseFloat(document.getElementById("service3").value);
+        price12 = parseFloat(document.getElementById("service4").value);
+        price13 = parseFloat(document.getElementById("service5").value);
+        price14 = parseFloat(document.getElementById("service6").value);
+        price15 = parseFloat(document.getElementById("service7").value);
+        price16 = parseFloat(document.getElementById("service8").value);
+        price17 = parseFloat(document.getElementById("service9").value);
+        price18 = parseFloat(document.getElementById("service10").value);
+        price19 = parseFloat(document.getElementById("service11").value);
+        price20 = parseFloat(document.getElementById("service12").value);
+
+        document.getElementById("result").innerHTML = price1 + price2 + price3 + price4 + price5 + price6 + price7 + price8 + price9;
+}
+
+function makeDecision()
+{
+    choice1 = document.getElementById("windowsbased").value;
+    choice2 = document.getElementById("mainframe").value;
+    choice3 = document.getElementById("oracle").value;
+    choice4 = document.getElementById("ha").value;
+
+    if(choice1 == 'yes' || choice2 == 'yes' || choice3 == 'yes'){
+
+            decision = "Windows/Mainframe Applications and Oracle Databases cannot be deployed on Openshift"
+    }
+    else if(choice1 == 'no' || choice2 == 'no' || choice3 == 'no'){
+      if(choice4 == "yes"){
+        decision = "You can move your application to Openshift by going through the checklist"
+      }
+      else{
+
+        decision = "You can move your application to Openshift by ensuring your application is hughly available and by going through the checklist"
+      }
+    }
+    document.getElementById("decision").innerHTML = decision
+}
+
+
+</script>
+</body>
+</html>
