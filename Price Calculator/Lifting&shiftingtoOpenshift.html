@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title> Cost Benefit Analysis </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+<h1> The OpenShift Lift and Shift Checklist </h1>
+<form>
+<label for="checklist1"> 1. Is your application code in a distributed modern version control system such as BitBucket, GitHub, GitLab etc? </label>
+<select id="checklist1" name="checklist1" onchange="evaluateChecklist1()">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="y"> Yes </option>
+  <option value="n"> No </option>
+</select>
+
+</form>
+<a href="https://medium.com/faun/centralized-vs-distributed-version-control-systems-a135091299f0"> Click here to view the differences between a centralized version contol system vs a distributed version control system </a>
+</br>
+<p> <b> Evaluation:  <span id="checklist1result"> </span> </b> </p>
+<hr>
+<form>
+    <label for="checklist2"> 2. Have you determined you application dependencies? What about the database dependencies? </label>
+    <select id="checklist2" name="checklist2" onchange="evaluateChecklist2()">
+      <option disabled selected value> -- select an option -- </option>
+      <option value="y"> Yes </option>
+      <option value="n"> No </option>
+    </select>
+    
+    </form>
+    <a href="https://medium.com/faun/centralized-vs-distributed-version-control-systems-a135091299f0"> Click here to view the differences between a centralized version contol system vs a distributed version control system </a>
+    </br>
+    <p> <b> Evaluation:  <span id="checklist1result"> </span> </b> </p>
+    <hr>
+    
+<script>
+    function evaluateChecklist1(){
+        value1 = document.getElementById("checklist1").value;
+        if(value1 == 'y') {
+            result = "Thats great! You are one step closer to being able to run your application on OpenShift."
+        }
+        else {
+            result = "The first step to move to Openshift, is ensuring the version control system you use is compatible with DevOps tools. In order to add automation, move your code to BitBucket or GitHub. A sample script to move from SVN to BitBucket is given <a href=SVNtoBitbucket.sh>here</a>. This script can be used as is or can be modified to suit your requirements"
+        }
+        document.getElementById("checklist1result").innerHTML = result
+
+    }
+</script>
+</body>
+</html>

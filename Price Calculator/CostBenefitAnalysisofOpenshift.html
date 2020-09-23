@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title> Cost Benefit Analysis </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+<h1> Benefits of moving to OpenShift </h1>
+<ul>
+    <li> The cost incurred by ministries for the underyling infrastructure resources like compute, network and storage is <b> zero</b></li>
+    <li> The amount of resources used by a given application will exponentially reduce. This is because containers have only enough Operating System resources required for the packages and have no additional packages. A typical application on Openshift might consume 256MB to 512MB of RAM and 500 millicores to 1 core CPU. </li>
+    <li> Moving to openshift, will enable you to store the underlying infrastructure for  the application as code, such as the image configurations, deployment configurations, software dependencies, storage configurations etc. This would ensure faster recovery upon failure as well ensure to keep the environment configurations and the applications secrets separated from application code. </li>
+    <li> In order to save costs on resources while using Virtual Machines, typically the DEV and TEST environments are not similar to PRODUCTION. This leads to environment drift due to which if changes made and tested in the lower environments do not guarantee a succesful deployment of the change in production. With the use of containers, it becomes easier to use the same image in all the environments which leads to consistency across the different staging environments. </li>
+    <li> With the use of OpenShift, it also becomes easy to clean the lower environments, since deployments to each environment take just a few minutes, the dev and test environments can be cleaned out to avoid using system resources when they are not required. </li>
+    <li> Using OpenShift, also provides you with an opportunity to develop a single command to build and deploy your application which can be run from any environment, be it your desktop or from jenkins, or other CI/CD tools. This helps in portability. </li>
+    <li> Even if you are unsure about the future of OpenShift vs the adoption of Public Cloud, Openshift makes it easier to make your applications cloud ready and moving from OpenShift to AWS or Azure would be simpler than moving them from a legacy environment. </li>
+    <li> Moving to Openshift helps in adopting the Agile and DevOps Culture and paves a way towards automation. While deploying changes to applications on VMs, there are a few time consuming manual processes and manual changes required due to dependencies and the affects on other applications housed in the same vms. OpenShift helps resolve all these problems by ensuring your applications have fewer dependencies and they are atomic so that they dont impact other applications. </li>
+    <li> OpenShift helps in ensuring high availability of applications and also autoscaling (horizontal scaling) during the times of high demand. </li>
+    <li> If a typical change to your application or database, takes months, moving to Openshift and adopting DevOps, will empower you to make changes whenever you want and the time to run the different stages can be as short as a few seconds. </li>
+    <li> Adding automated unit and integration tests would also ensure that there are fewer failures in your application. </li> 
+</ul>
+
+<a href=Lifting&shiftingtoOpenshift.html> <h4>Click here to view the Openshift Readiness Checklist </h4></a>
+</body>
+</html>
