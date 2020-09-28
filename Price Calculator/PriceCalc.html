@@ -9,7 +9,7 @@ body {margin: 30px;}
 </head>
 <body>
 <h1> Price Calculator for Application Hosting on Physical Servers or Virtual Machines </h1>
-<form>
+<form id="PriceCalc">
     <label for="frontend">Choose a physical server or virtual machine to host your web application front end (PRODUCTION Environment):</label>
     <select id="frontend" name="frontend">
       <option value=580.00>Linux Virtual Server - Production </option>
@@ -254,7 +254,7 @@ body {margin: 30px;}
     </br> 
       <label for="service12"> Extended support - 7x24? </label>
       <select id="service12" name="service12">
-        <option value=106>Yes</option>
+        <option value=106.00>Yes</option>
         <option value=0.00>No</option>
       </select>
 </br>
@@ -272,6 +272,7 @@ body {margin: 30px;}
 <hr> 
 
 <h1> Should I lift and shift my legacy application to OpenShift? </h1>
+<form id="OpenShiftDecider">
 <label for="windowsbased"> Is your application a Windows based Application</label>
 <select id="windowsbased" name="windowsbased">
         <option value="yes">Yes</option>
@@ -295,13 +296,6 @@ body {margin: 30px;}
 </select>
 </br>
 </br>
-<label for="ha"> Does your application support high availability?</label>
-<select id="ha" name="ha">
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-</select>
-</br>
-</br>
 <input type="button" onClick="makeDecision()" Value="Check Openshift Compatibility" />
 </form>
 <p>The Decision is : <span id = "decision"></span> </p>
@@ -313,53 +307,36 @@ body {margin: 30px;}
 <script>
   function calculateTotalPrice()
 {
-        price1 = parseFloat(document.getElementById("frontend").value);
-        price2 = parseFloat(document.getElementById("dev&testfrontend").value)*2;
-        price3 = parseFloat(document.getElementById("database").value);
-        price4 = parseFloat(document.getElementById("dev&testdatabase").value)*2;
-        price5 = parseFloat(document.getElementById("middleware").value);
-        price6 = parseFloat(document.getElementById("dev&testmiddleware").value)*2;
-        price7 = parseFloat(document.getElementById("storage").value);
-        price8 = parseFloat(document.getElementById("dev&teststorage").value)*2;
-        price9 = parseFloat(document.getElementById("service1").value);
-        price10 = parseFloat(document.getElementById("service2").value);
-        price11 = parseFloat(document.getElementById("service3").value);
-        price12 = parseFloat(document.getElementById("service4").value);
-        price13 = parseFloat(document.getElementById("service5").value);
-        price14 = parseFloat(document.getElementById("service6").value);
-        price15 = parseFloat(document.getElementById("service7").value);
-        price16 = parseFloat(document.getElementById("service8").value);
-        price17 = parseFloat(document.getElementById("service9").value);
-        price18 = parseFloat(document.getElementById("service10").value);
-        price19 = parseFloat(document.getElementById("service11").value);
-        price20 = parseFloat(document.getElementById("service12").value);
-
-        document.getElementById("result").innerHTML = price1 + price2 + price3 + price4 + price5 + price6 + price7 + price8 + price9;
+      var elements = document.getElementById("PriceCalc").elements;
+      var total_price = 0
+      for(var i=0, element; element = elements[i++];){
+           if(element.value != "" && element.id != ""){
+             total_price = total_price + parseFloat(element.value)
+           }
+      }
+        document.getElementById("result").innerHTML = total_price.toFixed(2)
 }
 
 function makeDecision()
 {
-    choice1 = document.getElementById("windowsbased").value;
-    choice2 = document.getElementById("mainframe").value;
-    choice3 = document.getElementById("oracle").value;
-    choice4 = document.getElementById("ha").value;
-
-    if(choice1 == 'yes' || choice2 == 'yes' || choice3 == 'yes'){
-
-            decision = "Windows/Mainframe Applications and Oracle Databases cannot be deployed on Openshift"
-    }
-    else if(choice1 == 'no' || choice2 == 'no' || choice3 == 'no'){
-      if(choice4 == "yes"){
-        decision = "You can move your application to Openshift by going through the checklist"
-      }
-      else{
-
-        decision = "You can move your application to Openshift by ensuring your application is hughly available and by going through the checklist"
+    var elements = document.getElementById("OpenShiftDecider").elements;
+    var flag = 0
+    for(var i=0, element; element = elements[i++];){
+      if(element.value != "" && element.id != ""){
+        if(element.value == 'yes') {
+             flag=1
+        }
       }
     }
-    document.getElementById("decision").innerHTML = decision
-}
+    if(flag == 1)
+    {
+      document.getElementById("decision").innerHTML = "Your application <b>cannot</b> be moved as is to OpenShift"
+    }
+    else {
+      document.getElementById("decision").innerHTML = "Your application <b>can</b> be lifted and shifted as is to OpenShift"
+    }
 
+  }
 
 </script>
 </body>
