@@ -2,150 +2,154 @@
 <html> 
 <head>
 <meta charset=utf-8 />
-<title> Price Calculator for Application Hosting on Virtual Machines </title>
+<title> Price Calculator for Application Hosting on Physical Servers or Virtual Machines </title>
 <style type="text/css">
 body {margin: 30px;}
 </style> 
 </head>
 <body>
-<h1> Price Calculator for Application Hosting on Virtual Machines </h1>
+<h1> Price Calculator for Application Hosting on Physical Servers or Virtual Machines </h1>
 <form>
-    <label for="frontend">Choose a virtual machine to host your web application front end (PRODUCTION Environment):</label>
+    <label for="frontend">Choose a physical server or virtual machine to host your web application front end (PRODUCTION Environment):</label>
     <select id="frontend" name="frontend">
-      <option value=945.00>Linux Web Application Tier 1 Small - Production</option>
-      <option value=1075.00>Linux Web Application Tier 1 Medium - Production</option>
-      <option value=1628.00>Linux Web Application Tier 1 Large - Production</option>
-      <option value=720.00>Linux Web Application Tier 2 Small - Production</option>
-      <option value=755.00>Linux Web Application Tier 2 Medium - Production</option>
-      <option value=1055.00>Linux Web Application Tier 2 Large - Production</option>
-      <option value=745.00>Linux Web Application Tier 3 Small - Production</option>
-      <option value=780.00>Linux Web Application Tier 3 Medium - Production</option>
-      <option value=1080.00>Linux Web Application Tier 3 Large - Production</option>
-      <option value="wt1s">Windows Web Application Tier 1 Small - Production</option>
-      <option value="wt1m">Windows Web Application Tier 1 Medium - Production</option>
-      <option value="wt1l">Windows Web Application Tier 1 Large - Production</option>
-      <option value="wt2s">Windows Web Application Tier 2 Small - Production</option>
-      <option value="wt2m">Windows Web Application Tier 2 Medium - Production</option>
-      <option value="wt2l">Windows Web Application Tier 2 Large - Production</option>
-      <option value="wt3s">Windows Web Application Tier 3 Small - Production</option>
-      <option value="wt3m">Windows Web Application Tier 3 Medium - Production</option>
-      <option value="wt3l">Windows Web Application Tier 3 Large - Production</option>
+      <option value=580.00>Linux Virtual Server - Production </option>
+      <option value=580.00>Windows Virtual Server - Production</option>
+      <option value=945.00>Physical Server: Linux Web Application Tier 1 Small - Production</option>
+      <option value=1075.00>Physical Server: Linux Web Application Tier 1 Medium - Production</option>
+      <option value=1628.00>Physical Server: Linux Web Application Tier 1 Large - Production</option>
+      <option value=720.00>Physical Server: Linux Web Application Tier 2 Small - Production</option>
+      <option value=755.00>Physical Server: Linux Web Application Tier 2 Medium - Production</option>
+      <option value=1055.00>Physical Server: Linux Web Application Tier 2 Large - Production</option>
+      <option value=745.00>Physical Server: Linux Web Application Tier 3 Small - Production</option>
+      <option value=780.00>Physical Server: Linux Web Application Tier 3 Medium - Production</option>
+      <option value=1080.00>Physical Server: Linux Web Application Tier 3 Large - Production</option>
+      <option value=898.00>Physical Server: Windows Web Application Tier 1 Small - Production</option>
+      <option value=1005.00>Physical Server: Windows Web Application Tier 1 Medium - Production</option>
+      <option value=1510.00>Physical Server: Windows Web Application Tier 1 Large - Production</option>
+      <option value=710.00>Physical Server: Windows Web Application Tier 2 Small - Production</option>
+      <option value=745.00>Physical Server: Windows Web Application Tier 2 Medium - Production</option>
+      <option value=1045.00>Physical Server: Windows Web Application Tier 2 Large - Production</option>
+      <option value=730.00>Physical Server: Windows Web Application Tier 3 Small - Production</option>
+      <option value=775.00>Physical Server: Windows Web Application Tier 3 Medium - Production</option>
+      <option value=1070.00>Physical Server: Windows Web Application Tier 3 Large - Production</option>
     </select>
     </br>
     </br>
-    <label for="dev&testfrontend">Choose a virtual machine to host your web application front end(DEV OR DLVR and TEST Environments):</label>
+    <label for="dev&testfrontend">Choose a physical server or virtual machine to host your web application front end(DEV OR DLVR and TEST Environments):</label>
     <select id="dev&testfrontend" name="dev&testfrontend">
-        <option value=820.00>Linux Development or Test Tier 1 Small - Production</option>
-        <option value=955.00>Linux Development or Test Tier 1 Medium - Production</option>
-        <option value=1510.00>Linux Development or Test Tier 1 Large - Production</option>
-        <option value=600.00>Linux Development or Test Tier 2 Small - Production</option>
-        <option value=635.00>Linux Development or Test Tier 2 Medium - Production</option>
-        <option value=935.00>Linux Development or Test 2 Large - Production</option>
-        <option value=585.00>Linux Development or Test 3 Small - Production</option>
-        <option value=625.00>Linux Development or Test 3 Medium - Production</option>
-        <option value=960.00>Linux Development or Test 3 Large - Production</option>
-        <option value="wdtt1s">Windows Development or Test Tier 1 Small - Production</option>
-        <option value="wdtt1m">Windows Development or Test Tier 1 Medium - Production</option>
-        <option value="wdtt1l">Windows Development or Test Tier 1 Large - Production</option>
-        <option value="wdtt2s">Windows Development or Test Tier 2 Small - Production</option>
-        <option value="wdtt2m">Windows Development or Test Tier 2 Medium - Production</option>
-        <option value="wdtt2l">Windows Development or Test Tier 2 Large - Production</option>
-        <option value="wdtt3s">Windows Development or Test Tier 3 Small - Production</option>
-        <option value="wdtt3m">Windows Development or Test Tier 3 Medium - Production</option>
-        <option value="wdtt3l">Windows Development or Test Tier 3 Large - Production</option>
+        <option value=535.00>Linux Virtual Server - Dev or Test </option>
+        <option value=535.00>Windows Virtual Server - Dev or Test </option>
+        <option value=820.00>Physical Server: Linux Development or Test Tier 1 Small </option>
+        <option value=955.00>Physical Server: Linux Development or Test Tier 1 Medium </option>
+        <option value=1510.00>Physical Server: Linux Development or Test Tier 1 Large </option>
+        <option value=600.00>Physical Server: Linux Development or Test Tier 2 Small </option>
+        <option value=635.00>Physical Server: Linux Development or Test Tier 2 Medium </option>
+        <option value=935.00>Physical Server: Linux Development or Test 2 Large </option>
+        <option value=585.00>Physical Server: Linux Development or Test 3 Small </option>
+        <option value=625.00>Physical Server: Linux Development or Test 3 Medium </option>
+        <option value=960.00>Physical Server: Linux Development or Test 3 Large </option>
+        <option value=790.00>Physical Server: Windows Development or Test Tier 1  Small - Production</option>
+        <option value=895.00>Physical Server: Windows Web Application Tier 1 Medium - Production</option>
+        <option value=1400.00>Physical Server: Windows Development or Test Tier 1 Large - Production</option>
+        <option value=595.00>Physical Server: Windows Development or Test Tier 2 Small - Production</option>
+        <option value=630.00>Physical Server: Windows Development or Test Tier 2 Medium - Production</option>
+        <option value=930.00>Physical Server: Windows Development or Test Tier 2 Large - Production</option>
+        <option value=585.00>Physical Server: Windows Development or Test Tier 3 Small - Production</option>
+        <option value=630.00>Physical Server: Windows Development or Test Tier 3 Medium - Production</option>
+        <option value=950.00>Physical Server: Windows Development or Test Tier 3 Large - Production</option>
       </select>
     </br>
     </br>
-      <label for="database">Choose a virtual machine to host your database (PRODUCTION Environment):</label>
+      <label for="database">Choose a physical server or virtual machine to host your database (PRODUCTION Environment):</label>
       <select id="database" name="database">
-        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
-        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
-        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
-        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
-        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
-        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
-        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
-        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
-        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
-        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
-        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
-        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
-        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
-        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
-        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
-        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
-        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
-        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+        <option value=945.00>Physical Server: Linux Application or Database Tier 1 Small </option>
+        <option value=1095.00>Physical Server: Linux Application or Database Tier 1 Medium </option>
+        <option value=1630.00>Physical Server: Linux Application or Database Tier 1 Large </option>
+        <option value=720.00>Physical Server: Linux Application or Database Tier 2 Small </option>
+        <option value=780.00>Physical Server: Linux Application or Database Tier 2 Medium </option>
+        <option value=1055.00>Physical Server: Linux Application or Database Tier 2 Large </option>
+        <option value=710.00>Physical Server: Linux Application or Database Tier 3 Small </option>
+        <option value=754.00>Physical Server: Linux Application or Database Tier 3 Medium </option>
+        <option value=1010.00>Physical Server: Linux Application or Database Tier 3 Large </option>
+        <option value=898.00>Physical Server: Windows Application or Database Tier 1 Small </option>
+        <option value=1030.00>Physical Server: Windows Application or Database Tier 1 Medium </option>
+        <option value=1510.00>Physical Server: Windows Application or Database Tier 1 Large </option>
+        <option value=710.00>Physical Server: Windows Application or Database Tier 2 Small </option>
+        <option value=775.00>Physical Server: Windows Application or Database Tier 2 Medium </option>
+        <option value=1045.00>Physical Server: Windows Application or Database Tier 2 Large </option>
+        <option value=700.00>Physical Server: Windows Application or Database Tier 3 Small </option>
+        <option value=745.00>Physical Server: Windows Application or Database Tier 3 Medium </option>
+        <option value=998.00>Physical Server: Windows Application or Database Tier 3 Large </option>
       </select>
     </br>
     </br>
-    <label for="dev&testdatabase">Choose a virtual machine to host your database (DEV OR DLVR and TEST Environment):</label>
+    <label for="dev&testdatabase">Choose a physical server or virtual machine to host your database (DEV OR DLVR and TEST Environment):</label>
       <select id="dev&testdatabase" name="dev&testdatabase">
-        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
-        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
-        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
-        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
-        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
-        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
-        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
-        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
-        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
-        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
-        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
-        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
-        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
-        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
-        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
-        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
-        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
-        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+        <option value=945.00>Physical Server: Linux Application or Database Tier 1 Small </option>
+        <option value=1095.00>Physical Server: Linux Application or Database Tier 1 Medium </option>
+        <option value=1630.00>Physical Server: Linux Application or Database Tier 1 Large </option>
+        <option value=720.00>Physical Server: Linux Application or Database Tier 2 Small </option>
+        <option value=780.00>Physical Server: Linux Application or Database Tier 2 Medium </option>
+        <option value=1055.00>Physical Server: Linux Application or Database Tier 2 Large </option>
+        <option value=710.00>Physical Server: Linux Application or Database Tier 3 Small </option>
+        <option value=754.00>Physical Server: Linux Application or Database Tier 3 Medium </option>
+        <option value=1010.00>Physical Server: Linux Application or Database Tier 3 Large </option>
+        <option value=898.00>Physical Server: Windows Application or Database Tier 1 Small </option>
+        <option value=1030.00>Physical Server: Windows Application or Database Tier 1 Medium </option>
+        <option value=1510.00>Physical Server: Windows Application or Database Tier 1 Large </option>
+        <option value=710.00>Physical Server: Windows Application or Database Tier 2 Small </option>
+        <option value=775.00>Physical Server: Windows Application or Database Tier 2 Medium </option>
+        <option value=1045.00>Physical Server: Windows Application or Database Tier 2 Large </option>
+        <option value=700.00>Physical Server: Windows Application or Database Tier 3 Small </option>
+        <option value=745.00>Physical Server: Windows Application or Database Tier 3 Medium </option>
+        <option value=998.00>Physical Server: Windows Application or Database Tier 3 Large </option>
       </select>
     </br>
     </br>
-      <label for="middleware">Choose a virtual machine to host your middleware application if any (PRODUCTION Environment): </label>
+      <label for="middleware">Choose a physical server or virtual machine to host your middleware application if any (PRODUCTION Environment): </label>
       <select id="middleware" name="middleware">
-        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
-        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
-        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
-        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
-        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
-        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
-        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
-        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
-        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
-        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
-        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
-        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
-        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
-        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
-        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
-        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
-        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
-        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+        <option value=945.00>Physical Server: Linux Application or Database Tier 1 Small </option>
+        <option value=1095.00>Physical Server: Linux Application or Database Tier 1 Medium </option>
+        <option value=1630.00>Physical Server: Linux Application or Database Tier 1 Large </option>
+        <option value=720.00>Physical Server: Linux Application or Database Tier 2 Small </option>
+        <option value=780.00>Physical Server: Linux Application or Database Tier 2 Medium </option>
+        <option value=1055.00>Physical Server: Linux Application or Database Tier 2 Large </option>
+        <option value=710.00>Physical Server: Linux Application or Database Tier 3 Small </option>
+        <option value=754.00>Physical Server: Linux Application or Database Tier 3 Medium </option>
+        <option value=1010.00>Physical Server: Linux Application or Database Tier 3 Large </option>
+        <option value=898.00>Physical Server: Windows Application or Database Tier 1 Small </option>
+        <option value=1030.00>Physical Server: Windows Application or Database Tier 1 Medium </option>
+        <option value=1510.00>Physical Server: Windows Application or Database Tier 1 Large </option>
+        <option value=710.00>Physical Server: Windows Application or Database Tier 2 Small </option>
+        <option value=775.00>Physical Server: Windows Application or Database Tier 2 Medium </option>
+        <option value=1045.00>Physical Server: Windows Application or Database Tier 2 Large </option>
+        <option value=700.00>Physical Server: Windows Application or Database Tier 3 Small </option>
+        <option value=745.00>Physical Server: Windows Application or Database Tier 3 Medium </option>
+        <option value=998.00>Physical Server: Windows Application or Database Tier 3 Large </option>
         <option value=0.00>None</option>
       </select>
     </br>
     </br>
-      <label for="dev&testmiddleware">Choose a virtual machine to host your middleware application if any (DEV OR DLVR and TEST Environments):</label>
+      <label for="dev&testmiddleware">Choose a physical server or virtual machine to host your middleware application if any (DEV OR DLVR and TEST Environments):</label>
       <select id="dev&testmiddleware" name="dev&testmiddleware">
-        <option value=945.00>Linux Application or Database Tier 1 Small - Production</option>
-        <option value=1095.00>Linux Application or Database Tier 1 Medium - Production</option>
-        <option value=1630.00>Linux Application or Database Tier 1 Large - Production</option>
-        <option value=720.00>Linux Application or Database Tier 2 Small - Production</option>
-        <option value=780.00>Linux Application or Database Tier 2 Medium - Production</option>
-        <option value=1055.00>Linux Application or Database Tier 2 Large - Production</option>
-        <option value=710.00>Linux Application or Database Tier 3 Small - Production</option>
-        <option value=754.00>Linux Application or Database Tier 3 Medium - Production</option>
-        <option value=1010.00>Linux Application or Database Tier 3 Large - Production</option>
-        <option value="wadt1s">Windows Application or Database Tier 1 Small - Production</option>
-        <option value="wadt1m">Windows Application or Database Tier 1 Medium - Production</option>
-        <option value="wadt1l">Windows Application or Database Tier 1 Large - Production</option>
-        <option value="wadt2s">Windows Application or Database Tier 2 Small - Production</option>
-        <option value="wadt2m">Windows Application or Database Tier 2 Medium - Production</option>
-        <option value="wadt2l">Windows Application or Database Tier 2 Large - Production</option>
-        <option value="wadt3s">Windows Application or Database Tier 3 Small - Production</option>
-        <option value="wadt3m">Windows Application or Database Tier 3 Medium - Production</option>
-        <option value="wadt3l">Windows Application or Database Tier 3 Large - Production</option>
+        <option value=945.00>Physical Server: Linux Application or Database Tier 1 Small </option>
+        <option value=1095.00>Physical Server: Linux Application or Database Tier 1 Medium </option>
+        <option value=1630.00>Physical Server: Linux Application or Database Tier 1 Large </option>
+        <option value=720.00>Physical Server: Linux Application or Database Tier 2 Small </option>
+        <option value=780.00>Physical Server: Linux Application or Database Tier 2 Medium </option>
+        <option value=1055.00>Physical Server: Linux Application or Database Tier 2 Large </option>
+        <option value=710.00>Physical Server: Linux Application or Database Tier 3 Small </option>
+        <option value=754.00>Physical Server: Linux Application or Database Tier 3 Medium </option>
+        <option value=1010.00>Physical Server: Linux Application or Database Tier 3 Large </option>
+        <option value=898.00>Physical Server: Windows Application or Database Tier 1 Small </option>
+        <option value=1030.00>Physical Server: Windows Application or Database Tier 1 Medium </option>
+        <option value=1510.00>Physical Server: Windows Application or Database Tier 1 Large </option>
+        <option value=710.00>Physical Server: Windows Application or Database Tier 2 Small </option>
+        <option value=775.00>Physical Server: Windows Application or Database Tier 2 Medium </option>
+        <option value=1045.00>Physical Server: Windows Application or Database Tier 2 Large </option>
+        <option value=700.00>Physical Server: Windows Application or Database Tier 3 Small </option>
+        <option value=745.00>Physical Server: Windows Application or Database Tier 3 Medium </option>
+        <option value=998.00>Physical Server: Windows Application or Database Tier 3 Large </option>
         <option value=0.00>None</option>
       </select>
     </br>
@@ -256,6 +260,7 @@ body {margin: 30px;}
 <hr>
 <h1> Cost Incurred by Ministries after moving applications to Openshift? </h1>
 <p> Ministries incur <b> zero </b> costs for infrastructure but need to incur costs for an agile team to continuously manage and monitor the application on OpenShift </p>
+<a href=AgileTeamComposition.html> <h4>Click here to view the Agile Team Composition for lifting and shifting your Applications </h4></a>s
 <hr> 
 
 <h1> Should I lift and shift my legacy application to OpenShift? </h1>
@@ -270,6 +275,7 @@ body {margin: 30px;}
 <select id="mainframe" name="mainframe">
         <option value="yes">Yes</option>
         <option value="no">No</option>
+        <option value="NA">Not Applicable</option>
 </select>
 </br>
 </br>
@@ -277,6 +283,7 @@ body {margin: 30px;}
 <select id="oracle" name="oracle">
         <option value="yes">Yes</option>
         <option value="no">No</option>
+        <option value="NA">Not Applicable</option>
 </select>
 </br>
 </br>
@@ -293,6 +300,7 @@ body {margin: 30px;}
 
 <a href=CostBenefitAnalysisofOpenshift.html> <h4>Click here to view the benefits of moving to OpenShift</h4></a>
 <a href=Lifting&shiftingtoOpenshift.html> <h4>Click here to view the Openshift Readiness Checklist </h4></a>
+
 
 <script>
   function calculateTotalPrice()
